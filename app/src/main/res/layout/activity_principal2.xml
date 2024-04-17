@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondodegradable"
+    tools:context="data.ui.segundoprincipal">
+
+
+    <TextView
+        android:id="@+id/circuloverde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/palomita2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/baseline_check_24"
+        app:layout_constraintBottom_toBottomOf="@+id/circuloverde"
+        app:layout_constraintEnd_toEndOf="@+id/circuloverde"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/circuloverde"
+        app:layout_constraintTop_toTopOf="@+id/circuloverde"
+        app:layout_constraintVertical_bias="0.372" />
+
+
+
+    <CalendarView
+            android:id="@+id/calendarioRedu"
+            android:layout_width="355dp"
+            android:layout_height="173dp"
+            android:background="@drawable/fondotransparente"
+            android:backgroundTint="@color/black"
+            android:contextClickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.331" />
+
+        <View
+            android:id="@+id/sintomasprincipal2"
+            android:layout_width="355dp"
+            android:layout_height="130dp"
+            android:background="@drawable/cuadrotransparente"
+            android:backgroundTint="#605B5555"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.956" />
+
+    <TextView
+        android:id="@+id/fondodif"
+        android:layout_width="347dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/ovalotexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="@string/dias"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/CuadroCiclo"
+            app:layout_constraintEnd_toEndOf="@+id/CuadroCiclo"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="@+id/CuadroCiclo"
+            app:layout_constraintTop_toTopOf="@+id/CuadroCiclo"
+            app:layout_constraintVertical_bias="0.235" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/CuadroCiclo"
+            app:layout_constraintEnd_toEndOf="@+id/CuadroCiclo"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="@+id/CuadroCiclo"
+            app:layout_constraintTop_toTopOf="@+id/CuadroCiclo"
+            app:layout_constraintVertical_bias="0.91"></LinearLayout>
+
+        <View
+            android:id="@+id/CuadroCiclo"
+            android:layout_width="355dp"
+            android:layout_height="201dp"
+            android:background="@drawable/cuadrotransparente"
+            android:backgroundTint="#605B5555"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.686" />
+
+        <TextView
+            android:id="@+id/ciclo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mi Ciclo"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/CuadroCiclo"
+            app:layout_constraintEnd_toEndOf="@+id/CuadroCiclo"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="@+id/CuadroCiclo"
+            app:layout_constraintTop_toTopOf="@+id/CuadroCiclo"
+            app:layout_constraintVertical_bias="0.063" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ovulacion"
+            android:textColor="#FFFFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/CuadroCiclo"
+            app:layout_constraintEnd_toEndOf="@+id/CuadroCiclo"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="@+id/CuadroCiclo"
+            app:layout_constraintTop_toTopOf="@+id/CuadroCiclo"
+            app:layout_constraintVertical_bias="0.307" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prevision"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/CuadroCiclo"
+            app:layout_constraintEnd_toEndOf="@+id/CuadroCiclo"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="@+id/CuadroCiclo"
+            app:layout_constraintTop_toTopOf="@+id/CuadroCiclo"
+            app:layout_constraintVertical_bias="0.406" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/sintomasprincipal2"
+            app:layout_constraintEnd_toEndOf="@+id/sintomasprincipal2"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="@+id/sintomasprincipal2"
+            app:layout_constraintTop_toTopOf="@+id/sintomasprincipal2"
+            app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/sintomas"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/sintomasprincipal2"
+        app:layout_constraintTop_toTopOf="@+id/sintomasprincipal2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Demeter</string>
+    <string name="IniciarSesion">Inicar Sesion</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="Nota">Favor de ingresar los datos correctos</string>
+    <string name="Email">Email</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="contraseñacampo">********</string>
+    <string name="olvidocontraseña">Olvido su contraseña?</string>
+    <string name="confirmarcontraseña">Confirmar contraseña</string>
+    <string name="informacion">Informacion</string>
+    <string name="sintomas">Sintomas</string>
+    <string name="notas">Notas</string>
+    <string name="dias">faltan 3 dias para tu periodo</string>
+    <string name="guardar">Guardar</string>
+
+
+
+</resources>

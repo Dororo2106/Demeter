@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="coloruno">#FF9AB1</color>
+    <color name="colordos">#BE697C</color>
+    <color name="colortres">#AF5D70</color>
+    <color name="color1">#A55265</color>
+    <color name="color2">#C6AAC5</color>
+    <color name="color3">#FFFFFFFF</color>
+    <color name="colordif">#4D000000</color>
+    <color name="circuloverde">#FF09BC46</color>
+    <color name="colorcuadro">#7A65535F</color>
+    <color name="colorcuadro2">#634D59</color>
+
+
+
+
+</resources>
