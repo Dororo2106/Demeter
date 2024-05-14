@@ -1,4 +1,4 @@
-package data.remote.client
+package com.example.demeter.data.remote.client
 
 import android.content.Context
 import com.google.gson.GsonBuilder

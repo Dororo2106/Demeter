@@ -1,4 +1,4 @@
-package data.model
+package com.example.demeter.data.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

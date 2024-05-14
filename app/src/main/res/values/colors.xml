@@ -12,8 +12,12 @@
     <color name="circuloverde">#FF09BC46</color>
     <color name="colorcuadro">#7A65535F</color>
     <color name="colorcuadro2">#634D59</color>
-
-
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
 
 
 </resources>

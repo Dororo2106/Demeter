@@ -1,10 +1,10 @@
-package data.manager
+package com.example.demeter.data.manager
 
 import android.content.Context
-import data.model.UserResponse
-import data.remote.api.API
-import data.remote.client.ServiceGenerator
-import data.util.SharedPreferencesConnector
+import com.example.demeter.data.model.UserResponse
+import com.example.demeter.data.remote.api.API
+import com.example.demeter.data.remote.client.ServiceGenerator
+import com.example.demeter.util.SharedPreferencesConnector
 import rx.Observable
 
 class DataManager(val context: Context) {

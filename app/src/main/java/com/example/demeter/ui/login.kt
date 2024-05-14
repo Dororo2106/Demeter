@@ -1,4 +1,4 @@
-package data.ui
+package com.example.demeter.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -48,7 +48,7 @@ class login : AppCompatActivity() {
         }
         var atras = findViewById<ImageView>(R.id.atras1)
         atras.setOnClickListener{
-            val intent1 = Intent(this,MainActivity::class.java)
+            val intent1 = Intent(this, MainActivity::class.java)
             startActivity(intent1)
         }
         }

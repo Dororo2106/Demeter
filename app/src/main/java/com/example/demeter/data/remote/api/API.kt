@@ -1,7 +1,7 @@
-package data.remote.api
+package com.example.demeter.data.remote.api
 
-import data.model.UserRequest
-import data.model.UserResponse
+import com.example.demeter.data.model.UserRequest
+import com.example.demeter.data.model.UserResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.POST

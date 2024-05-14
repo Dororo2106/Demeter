@@ -1,4 +1,4 @@
-package data.ui
+package com.example.demeter.ui
 
 import android.content.ContentValues.TAG
 import android.content.Intent
@@ -19,6 +19,8 @@ class Register : AppCompatActivity() {
     private lateinit var  binding:ActivityRegisterBinding
     private lateinit var  firebaseAuth : FirebaseAuth
     val db = Firebase.firestore
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         var principal = findViewById<Button>(R.id.botonregistrarse)
@@ -62,7 +64,7 @@ class Register : AppCompatActivity() {
         }
         var atras = findViewById<ImageButton>(R.id.atras2)
         atras.setOnClickListener{
-            val intent1 = Intent(this,MainActivity::class.java)
+            val intent1 = Intent(this, MainActivity::class.java)
             startActivity(intent1)
         }
     }

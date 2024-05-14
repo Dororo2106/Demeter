@@ -1,8 +1,8 @@
-package data.ui
+package com.example.demeter.ui
 
 import android.content.Context
-import data.manager.DataManager
-import data.util.SharedPreferencesConnector
+import com.example.demeter.data.manager.DataManager
+import com.example.demeter.util.SharedPreferencesConnector
 import rx.Subscriber
 import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers

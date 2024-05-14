@@ -1,4 +1,4 @@
-package data.util
+package com.example.demeter.util
 
 import android.content.Context;
 import android.content.SharedPreferences
