@@ -1,15 +1,14 @@
-package com.example.demeter.ui
+package com.example.demeter.ui.LoginSingUp
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import com.example.demeter.R
 import com.example.demeter.databinding.ActivityRegisterBinding
+import com.example.demeter.ui.MainActivity
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.firestore

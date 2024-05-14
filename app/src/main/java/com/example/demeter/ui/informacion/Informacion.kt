@@ -1,12 +1,12 @@
-package com.example.demeter.ui
+package com.example.demeter.ui.informacion
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.demeter.R
 
-class NuevoSintoma : AppCompatActivity() {
+class Informacion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nuevo_sintoma)
+        setContentView(R.layout.activity_informacion)
     }
 }

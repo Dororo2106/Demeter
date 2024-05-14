@@ -63,25 +63,25 @@
             android:name=".DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.Informacion"
+            android:name=".ui.informacion.Informacion"
             android:exported="false" />
         <activity
-            android:name=".ui.NuevoSintoma"
+            android:name=".ui.sintomas.NuevoSintoma"
             android:exported="false" />
         <activity
-            android:name=".ui.Notas"
+            android:name=".ui.notas.Notas"
             android:exported="false" />
         <activity
-            android:name=".ui.segundoprincipal"
+            android:name=".ui.principal.segundoprincipal"
             android:exported="false" />
         <activity
-            android:name=".ui.Principal"
+            android:name=".ui.principal.Principal"
             android:exported="false" />
         <activity
-            android:name=".ui.Register"
+            android:name=".ui.LoginSingUp.Register"
             android:exported="false" />
         <activity
-            android:name=".ui.login"
+            android:name=".ui.LoginSingUp.login"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"

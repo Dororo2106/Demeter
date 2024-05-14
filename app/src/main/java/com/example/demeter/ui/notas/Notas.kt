@@ -1,4 +1,4 @@
-package com.example.demeter.ui
+package com.example.demeter.ui.notas
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
