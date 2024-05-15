@@ -51,6 +51,8 @@ dependencies {
     implementation("com.google.firebase:firebase-database:20.3.1")
     implementation("com.google.firebase:firebase-firestore:24.11.1")
     implementation("com.google.firebase:firebase-auth:22.3.1")
+    implementation("androidx.leanback:leanback:1.0.0")
+    implementation("com.github.bumptech.glide:glide:4.11.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -80,4 +82,15 @@ dependencies {
     //firebase
     implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
     implementation("com.google.firebase:firebase-analytics")
+
+    //DI
+    implementation ("com.google.dagger:dagger:2.51.1")
+    implementation ("com.google.dagger:dagger-android:2.51.1")
+    implementation ("com.google.dagger:dagger-android-support:2.51.1")
+    annotationProcessor ("com.google.dagger:dagger-compiler:2.51.1")
+    annotationProcessor ("com.google.dagger:dagger-android-processor:2.51.1")
+
+    // Cicerone library
+    implementation("com.github.terrakok:cicerone:7.1")
+
 }
