@@ -14,6 +14,7 @@ import com.example.demeter.R
 import com.example.demeter.databinding.ActivityRegisterBinding
 import com.example.demeter.ui.MainActivity
 import com.google.firebase.auth.FirebaseAuth
+import java.security.Principal
 
 
 class Login : AppCompatActivity() {
@@ -57,14 +58,14 @@ class Login : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(applicationContext, "Login succesfuly ", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this@Login, MainActivity::class.java) // Corregido
+                        Toast.makeText(applicationContext, "Se inicio sesion correctamente ", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this@Login, Principal::class.java) // Corregido
                         startActivity(intent)
                         finish()
                     } else {
                         Toast.makeText(
                             this@Login,
-                            "Authentication failed.",
+                            "La contraseña o correo no son correctas.",
                             Toast.LENGTH_SHORT,
                         ).show()
                     }
