@@ -56,6 +56,11 @@ class Register : AppCompatActivity() {
                             "Cuenta Creada.",
                             Toast.LENGTH_SHORT
                         ).show()
+                        var principal = findViewById<Button>(R.id.botonregistrarse)
+                        principal.setOnClickListener {
+                            val intent5 = Intent(this, Principal::class.java)
+                            startActivity(intent5)
+                        }
                     } else {
                         // If sign in fails, display a message to the user.
                         Toast.makeText(
@@ -66,7 +71,6 @@ class Register : AppCompatActivity() {
                     }
                 }
         }
-
 
         var atras = findViewById<ImageButton>(R.id.atras2)
         atras.setOnClickListener{

@@ -23,11 +23,12 @@
             android:id="@+id/Registrarse1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="52dp"
             android:text="@string/Registrarse"
             android:textSize="24sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.156"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/Rectangulo" />
 
@@ -35,10 +36,11 @@
             android:id="@+id/nota1"
             android:layout_width="145dp"
             android:layout_height="63dp"
-            android:layout_marginStart="44dp"
             android:layout_marginTop="8dp"
             android:text="@string/Nota"
             android:textColor="#6B000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.169"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Registrarse1" />
 
@@ -46,10 +48,11 @@
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/Email"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nota1" />
 
@@ -57,24 +60,26 @@
             android:id="@+id/Contraseña"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:text="@string/contraseña"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.132"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/numcel" />
 
         <EditText
             android:id="@+id/contraseñaprim"
-            android:layout_width="193dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="236dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="textPassword"
             android:textAlignment="center"
             android:textColor="#63000000"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.251"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
 
@@ -83,19 +88,23 @@
             android:layout_width="286dp"
             android:layout_height="48dp"
             android:backgroundTint="#EDA6B6"
+            android:shadowColor="#FFFFFF"
             android:text="@string/Registrarse"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/Rectangulo"
-            app:layout_constraintVertical_bias="0.923" />
+            app:layout_constraintVertical_bias="0.923"
+            app:rippleColor="#E63D3D"
+            app:strokeColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/confirmancontra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:text="@string/confirmarcontraseña"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -105,15 +114,16 @@
 
         <EditText
             android:id="@+id/confirmcontra"
-            android:layout_width="195dp"
-            android:layout_height="42dp"
+            android:layout_width="236dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="textPassword"
             android:textAlignment="center"
             android:textColor="#63000000"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.208"
+            app:layout_constraintHorizontal_bias="0.251"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/confirmancontra" />
 
@@ -131,13 +141,13 @@
 
         <EditText
             android:id="@+id/numcel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="336dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.217"
+            app:layout_constraintHorizontal_bias="0.594"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email" />
 

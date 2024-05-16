@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondodegradable"
-    tools:context=".ui.LoginSingUp.login">
+    tools:context=".ui.LoginSingUp.Login">
 
         <ImageView
             android:id="@+id/atras1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,10 +66,11 @@
             android:id="@+id/Contraseña"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
             android:text="@string/contraseña"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Email" />
 
@@ -77,13 +78,14 @@
             android:id="@+id/contraseñai"
             android:layout_width="193dp"
             android:layout_height="38dp"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:ems="10"
             android:inputType="textPassword"
             android:textAlignment="center"
             android:textColor="#63000000"
             android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.201"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
 
@@ -92,13 +94,20 @@
             android:layout_width="286dp"
             android:layout_height="48dp"
             android:backgroundTint="#634C57"
+            android:shadowColor="#FFFFFF"
             android:text="@string/IniciarSesion"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/Rectangulo"
-            app:layout_constraintVertical_bias="0.867" />
+            app:layout_constraintVertical_bias="0.865"
+            app:rippleColor="#E63D3D"
+            app:strokeColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/olvidocontra"
@@ -119,20 +128,22 @@
             android:layout_width="270dp"
             android:layout_height="275dp"
             android:layout_marginBottom="8dp"
-            app:tint="#000000"
             app:layout_constraintBottom_toTopOf="@+id/Rectangulo"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/demeter__6_" />
+            app:srcCompat="@drawable/demeter__6_"
+            app:tint="#000000" />
 
         <EditText
             android:id="@+id/Email"
             android:layout_width="192dp"
             android:layout_height="46dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email" />
 
