@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import com.example.demeter.R
 import com.example.demeter.databinding.ActivityRegisterBinding
@@ -15,52 +16,58 @@ import com.google.firebase.firestore.firestore
 import java.security.Principal
 
 class Register : AppCompatActivity() {
-    private lateinit var  binding:ActivityRegisterBinding
-    private lateinit var  firebaseAuth : FirebaseAuth
-    val db = Firebase.firestore
-
-
+    var auth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        var principal = findViewById<Button>(R.id.botonregistrarse)
-        principal.setOnClickListener{
-            val intent2 = Intent(this, Principal::class.java)
-            startActivity(intent2)
-        }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-        binding = ActivityRegisterBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        firebaseAuth =  FirebaseAuth.getInstance()
+        /*val signInTextView = findViewById<TextView>(R.id.txtSign)
+        signInTextView.setOnClickListener {
+            // Intent para iniciar MainActivity_SignUp
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
+        }*/
 
-        binding.botonregistrarse.setOnClickListener{
-            val email = binding.email.text.toString()
-            val contra = binding.contraseAprim.text.toString()
-            val confirmacontra = binding.confirmcontra.text.toString()
+        val emailText = findViewById<TextView>(R.id.numcel)
+        val contra = findViewById<TextView>(R.id.contraseñaprim)
+        val confirmarcontra = findViewById<TextView>(R.id.confirmcontra)
+        val button = findViewById<Button>(R.id.botonregistrarse)
 
-            if(email.isNotEmpty() && contra.isNotEmpty() && confirmacontra.isNotEmpty()){
-                if(contra.equals(confirmacontra)){
-                    firebaseAuth.createUserWithEmailAndPassword(email,contra).addOnCompleteListener{
-                        if(it.isSuccessful){
-                            val intent = Intent(this, login::class.java)
-                            startActivity(intent)
-                        }else
-                        {
-                            Toast.makeText(this, it.exception.toString(),Toast.LENGTH_SHORT).show()
-                        }
-                    }
-                }
-                else{
-                    Toast.makeText(this, "Contraseñas no coinciden",Toast.LENGTH_SHORT).show()
-                }
-            }else
-            {
-                Toast.makeText(this, "Dejo un espacio vacio",Toast.LENGTH_SHORT).show()
+
+        button.setOnClickListener{
+            val email = emailText.text.toString()
+            val password = contra.text.toString()
+
+            if (email.isEmpty()) {
+                Toast.makeText(this, "Ingresar Email", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            if (password.isEmpty()) {
+                Toast.makeText(this, "Ingresar Contraseña", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
             }
 
-
+            auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(
+                            this@Register,
+                            "Cuenta Creada.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    } else {
+                        // If sign in fails, display a message to the user.
+                        Toast.makeText(
+                            this@Register,
+                            "Creacion de cuenta fallida.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
         }
+
+
         var atras = findViewById<ImageButton>(R.id.atras2)
         atras.setOnClickListener{
             val intent1 = Intent(this, MainActivity::class.java)
