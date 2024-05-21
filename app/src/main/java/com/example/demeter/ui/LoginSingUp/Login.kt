@@ -19,7 +19,7 @@ import java.security.Principal
 
 class Login : AppCompatActivity() {
 
-    var auth = FirebaseAuth.getInstance()
+    private var auth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,9 +59,10 @@ class Login : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Toast.makeText(applicationContext, "Se inicio sesion correctamente ", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this@Login, Principal::class.java) // Corregido
+                        val intent = Intent(this@Login, com.example.demeter.ui.principal.Principal::class.java)
                         startActivity(intent)
                         finish()
+
                     } else {
                         Toast.makeText(
                             this@Login,

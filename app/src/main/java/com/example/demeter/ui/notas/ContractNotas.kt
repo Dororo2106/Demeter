@@ -6,6 +6,7 @@ class ContractNotas {
 
     }
 
-    interface Presenter{
+    interface Presenter {
+        fun loadInitialData()
     }
 }

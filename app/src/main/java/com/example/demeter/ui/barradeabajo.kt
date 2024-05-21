@@ -4,8 +4,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.demeter.R
-import com.example.demeter.Sintomas
+import com.example.demeter.informacion
+import com.example.demeter.ui.informacion.Informacion
 import com.example.demeter.ui.notas.Fragmentnotas
+import com.example.demeter.ui.sintomas.Sintomas
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class barradeabajo : AppCompatActivity(), MainContract.View
@@ -28,7 +30,7 @@ class barradeabajo : AppCompatActivity(), MainContract.View
         bottomNav?.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.item1 -> {
-                    loadFragment(Fragmentnotas())
+                    loadFragment(Informacion())
                     true
                 }
                 R.id.item2 -> {
@@ -36,7 +38,7 @@ class barradeabajo : AppCompatActivity(), MainContract.View
                     true
                 }
                 R.id.item3 -> {
-                    //    loadFragment(WorldFragment())
+                    loadFragment(Fragmentnotas())
                     true
                 }
 

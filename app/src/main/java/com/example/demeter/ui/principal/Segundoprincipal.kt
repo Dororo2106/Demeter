@@ -1,13 +1,12 @@
-package com.example.demeter.ui.principal
+package com.example.demeter.ui.principal // Cambia esto al paquete correcto
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.demeter.R
 
-class segundoprincipal : AppCompatActivity() {
+class Segundoprincipal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principal2)
     }
-
 }
