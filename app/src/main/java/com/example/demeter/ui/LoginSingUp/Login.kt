@@ -66,8 +66,8 @@ class Login : AppCompatActivity() {
                     } else {
                         Toast.makeText(
                             this@Login,
-                            "La contraseña o correo no son correctas.",
-                            Toast.LENGTH_SHORT,
+                            "Error al iniciar sesión: ${task.exception?.message}",
+                            Toast.LENGTH_SHORT
                         ).show()
                     }
                 }

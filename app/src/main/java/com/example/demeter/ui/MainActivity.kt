@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.demeter.R
-import com.example.demeter.ui.LoginSingUp.Register
 import com.example.demeter.ui.LoginSingUp.Login
+import com.example.demeter.ui.LoginSingUp.Register
 import com.example.demeter.ui.principal.Principal
 import com.google.firebase.auth.FirebaseAuth
 
